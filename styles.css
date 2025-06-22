@@ -1,0 +1,82 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/gradient-blur-pink-blue-abstract-background_53876-117324.jpg);
+    background-position: center;
+}
+.photo{
+    width: 140px;
+    height: 140px;
+    border-radius: 30%;
+    border: 2px solid black;
+    object-fit:fill;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-card {
+    background:lightcyan;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    max-width: 350px;
+    width: 100%;
+    transition: background 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.info-card th, .info-card td {
+    text-align: left;
+    padding: 8px 0; 
+}
+.info-card th {
+    color: #888;
+    width: 40%;
+    font-weight: 600;
+}
+.info-card td {
+    color: #222;
+    width: 60%;
+}
+.show_hobbies, .dropdown {
+    margin: 0.5rem 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #1976d2;
+    color: white;
+    cursor: pointer;
+    font-size:medium;
+    transition: background 0.9s;
+}
+.show_hobbies:hover {
+    background: #1565c0;
+}
+.dropdown {
+    background: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+}
+.extra-info {
+    margin-top: 1rem;
+    width: 100%;
+    background: #f6f9fc;
+    border-radius: 8px;
+    padding: auto;
+    font-size: 0.98rem;
+    color: black;
+    display: none;
+    text-align: left;
+}

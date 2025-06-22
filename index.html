@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Info Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="info-card" id="card">
+    <img src="images/Media.jpeg" alt="Profile photo" class="photo">
+    <h2>Personal Info</h2>
+    <table>
+      <tr>
+        <th>Name:</th>
+        <td>Mir Kashif Ali</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>mirkashifali619@gmail.com</td>
+      </tr>
+      <tr>
+        <th>Role:</th>
+        <td>Member of Technical Staff I</td>
+      </tr>
+      <tr>
+        <th>Location:</th>
+        <td>Pune India</td>
+      </tr>
+    </table>
+    <button class="show_hobbies" onclick="toggleExtra()">Show Hobbies</button>
+    <select class="dropdown" onchange="changeBg(this)">
+      <option value="#f6f9fc">Default</option>
+      <option value="#e3f2fd">Blue</option>
+      <option value="#fce4ec">Pink</option>
+      <option value="#f3e5f5">Purple</option>
+      <option value="#f9fbe7">Lime</option>
+    </select>
+    <div class="extra-info" id="extraInfo">
+      <strong>Additional Info:</strong>
+      <ul>
+        <li>Reading</li>
+        <li>Traveling</li>
+        <li>Gaming</li>
+        <li>Sleeping</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
