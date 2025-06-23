@@ -10,7 +10,7 @@
 <body>
   <div class="info-card" id="card">
     <img src="images/Media.jpeg" alt="Profile photo" class="photo">
-    <h2>Personal Info</h2>
+    <h2 style="font-size: 24px;">Personal Infomation</h2>
     <table>
       <tr>
         <th>Name:</th>
@@ -29,7 +29,8 @@
         <td>Pune India</td>
       </tr>
     </table>
-    <button class="show_hobbies" onclick="toggleExtra()">Show Hobbies</button>
+    <div class="button_grp">
+      <button class="show_hobbies" onclick="toggleExtra()">Show Hobbies</button>
     <select class="dropdown" onchange="changeBg(this)">
       <option value="#f6f9fc">Default</option>
       <option value="#e3f2fd">Blue</option>
@@ -37,8 +38,9 @@
       <option value="#f3e5f5">Purple</option>
       <option value="#f9fbe7">Lime</option>
     </select>
+    </div>
     <div class="extra-info" id="extraInfo">
-      <strong>Additional Info:</strong>
+      <strong>Hobbies:</strong>
       <ul>
         <li>Reading</li>
         <li>Traveling</li>

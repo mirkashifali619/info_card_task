@@ -1,25 +1,22 @@
 body {
     min-height: 100vh;
-    margin: 0;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    background-image: url(images/gradient-blur-pink-blue-abstract-background_53876-117324.jpg);
     background-position: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .photo{
     width: 140px;
     height: 140px;
-    border-radius: 30%;
+    border-radius: 50%;
     border: 2px solid black;
-    object-fit:fill;
-    display:flex;
-    margin-left: auto;
-    margin-right: auto;
+    object-fit:cover;
+    margin: 0 auto 15px;
 }
 .info-card {
     background:lightcyan;
-    border: 2px solid black;
+    border: 8px solid black;
     border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.07);
     padding-left: 40px;
@@ -32,51 +29,54 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 .info-card table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 16px;
 }
 .info-card th, .info-card td {
     text-align: left;
-    padding: 8px 0; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: black;
 }
-.info-card th {
-    color: #888;
-    width: 40%;
-    font-weight: 600;
+.info-card th{
+    width: 45%;
+    padding-right: 16px;
 }
-.info-card td {
-    color: #222;
-    width: 60%;
+.button-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0;
+    align-items: center;
 }
 .show_hobbies, .dropdown {
-    margin: 0.5rem 0.25rem;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 6px;
-    background: #1976d2;
+    background: black;
     color: white;
     cursor: pointer;
     font-size:medium;
-    transition: background 0.9s;
-}
-.show_hobbies:hover {
-    background: #1565c0;
-}
-.dropdown {
-    background: #eee;
-    color: #333;
-    border: 1px solid #ccc;
+    box-sizing: border-box;
+    max-width: 160px;
+    height: 40px;
 }
 .extra-info {
     margin-top: 1rem;
     width: 100%;
     background: #f6f9fc;
     border-radius: 8px;
-    padding: auto;
-    font-size: 0.98rem;
+    padding: 10px 15px;
+    font-size: 0.95rem;
     color: black;
     display: none;
     text-align: left;
+    box-sizing: border-box;
 }
